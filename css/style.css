@@ -1,5 +1,9 @@
 .container {
-  background-image: linear-gradient(rgba(94, 88, 92), rgba(57, 54, 56));
+  background-image: linear-gradient(rgb(110, 103, 108), rgba(57, 54, 56));
+}
+
+.projectcontainer {
+  background-image: url("assets\BIGAngelaBack.png");
 }
 
 .top-bar {
@@ -41,6 +45,11 @@
   box-shadow: 9px 7px 5px -6px rgba(0, 0, 0, 0.75);
 }
 
+.projectlist a {
+  color: black;
+  font-weight: bold;
+}
+
 .footbar {
   background-color: rgb(64, 58, 62);
 }
@@ -54,4 +63,21 @@
 
 .footlinks a:visited {
   color: rgb(116, 108, 113);
+}
+
+span.we {
+  color: rgb(209, 30, 90);
+  font-weight: bold;
+}
+span.can {
+  color: rgb(34, 143, 70);
+  font-weight: bold;
+}
+span.code {
+  color: rgb(57, 103, 230);
+  font-weight: bold;
+}
+span.it {
+  color: rgb(206, 36, 24);
+  font-weight: bold;
 }
