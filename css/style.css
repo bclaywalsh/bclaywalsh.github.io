@@ -1,0 +1,41 @@
+.container {
+  background-image: linear-gradient(rgba(94, 88, 92), rgba(57, 54, 56));
+}
+
+.top-bar {
+  background-color: rgb(64, 58, 62);
+}
+.top-navigation a {
+  color: rgb(226, 180, 209);
+}
+.top-navigation:hover {
+  color: rgb(206, 160, 189);
+}
+
+.top-navigation a:visited {
+  color: rgb(116, 108, 113);
+}
+
+.headline {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.subtext {
+  font-style: italic;
+}
+
+.heroimage {
+  /* opacity: 50%; */
+  background-image: linear-gradient(rgb(155, 180, 154), rgb(48, 54, 51));
+  -webkit-box-shadow: 9px 7px 5px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 7px 5px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px 7px 5px -6px rgba(0, 0, 0, 0.75);
+}
+
+.headshot {
+  background-image: linear-gradient(rgb(155, 180, 154), rgb(48, 54, 51));
+  -webkit-box-shadow: 9px 7px 5px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 7px 5px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px 7px 5px -6px rgba(0, 0, 0, 0.75);
+}
