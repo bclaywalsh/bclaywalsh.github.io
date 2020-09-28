@@ -44,14 +44,16 @@
 }
 
 .headline {
-  padding: 25px;
+  margin-top: 20px;
   display: flex;
+  flex-direction: row;
   align-items: flex-end;
   justify-content: center;
 }
 
 .subtext {
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
   justify-content: center;
 }
@@ -64,6 +66,7 @@
   border-style: outset;
   border-radius: 10px;
   width: 400px;
+  margin-bottom: 15%;
 }
 
 .headshot {
@@ -71,7 +74,15 @@
   flex-direction: row;
   /* justify-content: flex-end; */
   margin: 2rem auto;
+  margin-bottom: 10px;
   border-style: outset;
   border-radius: 20px;
   width: 300px;
+}
+
+.article {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
 }
