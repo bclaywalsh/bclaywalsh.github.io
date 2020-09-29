@@ -45,13 +45,18 @@
   box-shadow: 9px 7px 5px -6px rgba(0, 0, 0, 0.75);
 }
 
+.listofskills {
+  color: rgb(184, 178, 181);
+  font-weight: bold;
+}
+
 .projectlist a {
-  color: black;
+  color: rgb(184, 178, 181);
   font-weight: bold;
 }
 
 .footbar {
-  background-color: rgb(64, 58, 62);
+  background-color: rgb(44, 40, 43);
 }
 .footlinks a {
   color: rgb(167, 141, 157);
