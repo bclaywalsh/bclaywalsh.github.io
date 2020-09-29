@@ -127,6 +127,11 @@
   grid-column-gap: 30px;
 }
 
+.resumedownload {
+  display: block;
+  margin: 20px auto;
+}
+
 .projectlist {
   padding: 30px;
   height: 100px;

@@ -50,6 +50,11 @@
   font-weight: bold;
 }
 
+.resumedownload {
+  color: rgb(184, 178, 181);
+  font-weight: bold;
+}
+
 .projectlist a {
   color: rgb(184, 178, 181);
   font-weight: bold;
