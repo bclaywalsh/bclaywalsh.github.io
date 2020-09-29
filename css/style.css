@@ -1,9 +1,5 @@
-.container {
+.body {
   background-image: linear-gradient(rgb(110, 103, 108), rgba(57, 54, 56));
-}
-
-.projectcontainer {
-  background-image: url("assets\BIGAngelaBack.png");
 }
 
 .header {
@@ -13,8 +9,8 @@
   color: rgb(167, 141, 157);
   font-weight: bold;
 }
-.top-navigation:hover {
-  color: rgb(206, 160, 189);
+.top-navigation a:hover {
+  color: rgb(228, 207, 220);
 }
 
 .top-navigation a:visited {
@@ -60,7 +56,7 @@
   font-weight: bold;
 }
 
-.footbar {
+.footer {
   background-color: rgb(44, 40, 43);
 }
 .footlinks a {
