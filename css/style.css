@@ -1,4 +1,8 @@
-.body {
+/* .body {
+  background-image: linear-gradient(rgb(110, 103, 108), rgba(57, 54, 56));
+} */
+
+.container {
   background-image: linear-gradient(rgb(110, 103, 108), rgba(57, 54, 56));
 }
 
