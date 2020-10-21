@@ -3,17 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css\layout.css" />
     <link rel="stylesheet" href="css\style.css" />
     <title>Benjamin Walsh</title>
   </head>
   <body class="body">
     <div class="container">
+      <div id = "animatedBox1" class="movingBox"></div>
+      <div id = "animatedBox2" class="movingBox"></div>
+      <div id = "animatedBox3" class="movingBox"></div>
+      <div id = "animatedBox4" class="movingBox"></div>
+      <div id = "animatedBox5" class="movingBox"></div>
+      <div id = "animatedBox6" class="movingBox"></div>
       <header class="header">
         <nav class="top-navigation">
-          <a href="index.html">Home</a>
-          <a href="aboutme.html">About Me</a>
-          <a href="projects.html">Projects</a>
+          <div id="myLinks">
+            <div class="dropDown">
+              <a href="index.html">Home</a>
+              <a href="aboutme.html">About Me</a>
+              <a href="projects.html">Projects</a>
+              <p>  - - - Links - - -</p>
+              <a href="http://www.linkedin.com/in/benjamin-walsh-46899445"
+                >linkedIn</a
+              >
+              <a href="https://github.com/bclaywalsh">GitHub</a>
+              <a href="http://bclaywalsh.wixsite.com/portfolio">art portfolio</a>
+              </div>
+            </div>
+            
+          <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+            <i class="fa fa-bars"></i>
+          </a>
         </nav>
       </header>
       <main>
@@ -21,7 +42,7 @@
         <h3 class="subtext">Software Developer / Digital Artist</h3>
         <img
           class="heroimage"
-          src="assets\photo-1601246850604-57c45652f4eb.jpg"
+          src="assets\images\photo-1601246850604-57c45652f4eb.jpg"
           alt="A swimming tree"
         />
       </main>
@@ -41,5 +62,6 @@
         </nav>
       </footer>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>

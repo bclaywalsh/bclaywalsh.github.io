@@ -1,20 +1,64 @@
 .container {
   background-image: linear-gradient(rgb(110, 103, 108), rgba(57, 54, 56));
+  /* NEW CODE  */
+  position: relative;
+}
+
+.movingBox {
+  border-style: solid;
+}
+
+/* NEW CODE  */
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: rgba(200, 200, 200, 0.5);
 }
 
 .header {
   background-color: rgb(64, 58, 62);
 }
+
+.topnav #myLinks {
+  display: none;
+}
+
+.dropDown {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 .top-navigation a {
   color: rgb(167, 141, 157);
   font-weight: bold;
-}
-.top-navigation a:hover {
-  color: rgb(228, 207, 220);
+  display: block;
 }
 
-.top-navigation a:visited {
-  color: rgb(116, 108, 113);
+.top-navigation a.icon {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.top-navigation a:hover {
+  color: white;
+}
+
+.dropDown a:hover {
+  text-decoration: underline;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  width: 90%;
+  margin-left: 10px;
+  color: rgb(228, 207, 220);
+  -webkit-box-shadow: 10px 10px 9px -1px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 10px 10px 9px -1px rgba(0, 0, 0, 0.24);
+  box-shadow: 10px 10px 9px -1px rgba(0, 0, 0, 0.24);
+}
+
+.dropDown a {
+  text-decoration: none;
 }
 
 .headline {
@@ -25,6 +69,80 @@
 .subtext {
   font-style: italic;
 }
+
+/* Slideshow */
+.prev,
+.next {
+  cursor: pointer;
+  color: rgb(97, 80, 80);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* @-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+} */
+/* END Slideshow */
 
 .heroimage {
   background-image: linear-gradient(rgb(155, 180, 154), rgb(48, 54, 51));

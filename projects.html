@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css\layout.css" />
     <link rel="stylesheet" href="css\style.css" />
     <title>Projects - Benjamin Walsh</title>
@@ -10,22 +11,75 @@
   <body class="body">
     <div class="container">
       <header class="header">
-          <nav class="top-navigation">
-          <a href="index.html">Home</a>
-          <a href="aboutme.html">About Me</a>
-          <a href="projects.html">Projects</a>
-          </nav>
+        <nav class="top-navigation">
+          <div id="myLinks">
+            <div class="dropDown">
+              <a href="index.html">Home</a>
+              <a href="aboutme.html">About Me</a>
+              <a href="projects.html">Projects</a>
+              <a href="http://www.linkedin.com/in/benjamin-walsh-46899445"
+                >linkedIn</a
+              >
+              <a href="https://github.com/bclaywalsh">GitHub</a>
+              <a href="http://bclaywalsh.wixsite.com/portfolio">art portfolio</a>
+            </div>
+          <!-- <p><button onclick="myMove()">Click Me</button></p> -->
+          </div>
+        
+          <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </nav>
       </header>
       <main>
         <h1 class="headline">Projects</h1>
-        <img
+        <div class="slideshow-container-derelict-star">
+          <div class="mySlides fade">
+            <img class = "glorious" src="assets/images/DSTitleScreen.jpg" alt="">
+            <div class="text">Caption Text</div>
+          </div>
+          <div class="mySlides fade">
+            <img class = "glorious" src="assets/images/CorridorRun.jpg" alt="">
+            <div class="text">Caption Text</div>
+          </div>
+          <div class="mySlides fade">
+            <img class = "glorious" src="assets/images/UtilityRoom.jpg" alt="">
+            <div class="text">Caption Text</div>
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+          <a class="next" onclick="plusSlides(1)">&#10095</a>
+        </div>
+
+        <div class="slideshow-container-reviews">
+          <div class="mySlides fade">
+            <img class = "glorious" src="assets/images/bookReviews.jpg" alt="">
+            <div class="text">Caption Text</div>
+          </div>
+          <div class="mySlides fade">
+            <img class = "glorious" src="assets/images/movieReviews.jpg" alt="">
+            <div class="text">Caption Text</div>
+          </div>
+          <div class="mySlides fade">
+            <img class = "glorious" src="assets/images/gameReviews.png" alt="">
+            <div class="text">Caption Text</div>
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+          <a class="next" onclick="plusSlides(1)">&#10095</a>
+        </div>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <!-- <img
           class="glorious"
-          src="assets\BIGAngelaBack.png"
+          src="assets\images\BIGAngelaBack.png"
           alt="Power Armored Character looking over their shoulder at viewer"
-        />
+        /> -->
         <h3 class="subtext">If something is worth doing, it's worth doing well</h3>
         <ul class="projectlist">
           <li><a href="">Derelict Star </a>- A 2D Metroidvania focusing on exploration and environment</li>
+          <li><a href="">Bclaywalsh Reviews: </a>- A sister website to house my reviews of my favorite media</li>
           <li><a href="https://github.com/bclaywalsh/bclaywalsh-virtualpets-amok.git">(Pets Amok) Garden of Shinkai </a>- manage a garden full of Kami with their own opinions on what's best</li>
           <li><a href="https://github.com/2020-Summer-Cohort/virtual-pet-bclaywalsh.git">(Virtual Pet) Kami Kai </a>- a tamagachi-stye virtual pet from the spirit realms of Shinto theology</li>
         </ul>
@@ -50,5 +104,6 @@
             >
           </nav>
       </footer>
+    <script src="index.js"></script>
   </body>
 </html>
