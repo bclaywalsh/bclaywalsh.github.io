@@ -22,6 +22,8 @@
               >
               <a href="https://github.com/bclaywalsh">GitHub</a>
               <a href="http://bclaywalsh.wixsite.com/portfolio">art portfolio</a>
+              <!-- <a href="mailto:bclaywalsh@gmail.com">bclaywalsh@gmail.com</a>
+              <a href="mailto:DerelictStar01@gmail.com">derelictstar01@gmail.com</a> -->
             </div>
           <!-- <p><button onclick="myMove()">Click Me</button></p> -->
           </div>
@@ -35,37 +37,34 @@
         <h1 class="headline">Projects</h1>
         <div class="slideshow-container-derelict-star">
           <div class="mySlides fade">
-            <img class = "glorious" src="assets/images/DSTitleScreen.jpg" alt="">
-            <div class="text">Caption Text</div>
+            <img class="glorious" src="assets/images/DSTitleScreen.jpg" alt="">
+            <div class="text"></div>
           </div>
           <div class="mySlides fade">
             <img class = "glorious" src="assets/images/CorridorRun.jpg" alt="">
-            <div class="text">Caption Text</div>
+            <div class="text"></div>
           </div>
           <div class="mySlides fade">
             <img class = "glorious" src="assets/images/UtilityRoom.jpg" alt="">
-            <div class="text">Caption Text</div>
+            <div class="text"></div>
           </div>
-          <a class="prev" onclick="plusSlides(-1)">&#10094</a>
-          <a class="next" onclick="plusSlides(1)">&#10095</a>
         </div>
-
         <div class="slideshow-container-reviews">
           <div class="mySlides fade">
             <img class = "glorious" src="assets/images/bookReviews.jpg" alt="">
-            <div class="text">Caption Text</div>
+            <div class="text"></div>
           </div>
           <div class="mySlides fade">
             <img class = "glorious" src="assets/images/movieReviews.jpg" alt="">
-            <div class="text">Caption Text</div>
+            <div class="text"></div>
           </div>
           <div class="mySlides fade">
             <img class = "glorious" src="assets/images/gameReviews.png" alt="">
-            <div class="text">Caption Text</div>
+            <div class="text"></div>
           </div>
-          <a class="prev" onclick="plusSlides(-1)">&#10094</a>
-          <a class="next" onclick="plusSlides(1)">&#10095</a>
         </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+        <a class="next" onclick="plusSlides(1)">&#10095</a>
         <div style="text-align:center">
           <span class="dot" onclick="currentSlide(1)"></span>
           <span class="dot" onclick="currentSlide(2)"></span>
@@ -76,12 +75,36 @@
           src="assets\images\BIGAngelaBack.png"
           alt="Power Armored Character looking over their shoulder at viewer"
         /> -->
-        <h3 class="subtext">If something is worth doing, it's worth doing well</h3>
+        <!-- <h3 class="subtext">If something is worth doing, it's worth doing well</h3> -->
+        <div id="modal-DerelictStar" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>Derelict Star is my personal vision of what a Metroid game could be. It takes most of the mechanics of the classic Metroid games, adds in some melee combat reminiscent of Castlevania, and throws in some of my favorite content from various other games (Flight from Ranger-x, vehicular action scenes from Earthworm Jim, and drones similar to various space-shooters). It's hard to think of truly original content for a 2D action platformer at this day and age, but by combining my favorites and tweaking them to work cohesively I think the overall effect will be quite rewarding in its own rite.</p>
+            </div>
+        </div>
+        <div id="modal-Reviews" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>My reviews site started off as a series of projects for WCCI, but I intend it to take off and become a true reviews site of my own personal library of favorites.</p>
+          </div>
+        </div>
+        <div id="modal-Pets-Amok" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Pet's Amok (Garden of Shinkai) was the first Java project that I went overboard on. It's a (Java) console game that at this time only interacts through text, but could be made into a full-fledged app similar to some Gocha games. The player begins with a semi-random set of Spirits with which they are tasked to heal and nurture. At any time they can summon new spirits into their garden, or release a spirit out into the great beyond. The state of a spirit being released will have an impact on your overall Karma, so you are encouraged to treat the spirits well. Each spirit has a set of attributes that is determined by its nature, and must be dealt with in an essentially unique way.</p>
+          </div>
+        </div>
+        <div id="modal-VirtualPet" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>The Virtual Pet app is a prototype for Garden of Shinkai, in that it focuses in tightly on a single spirit companion. In this version, you are a human medium who can interact with spirits directly once per year.</p>
+          </div>
+        </div>
         <ul class="projectlist">
-          <li><a href="">Derelict Star </a>- A 2D Metroidvania focusing on exploration and environment</li>
-          <li><a href="">Bclaywalsh Reviews: </a>- A sister website to house my reviews of my favorite media</li>
-          <li><a href="https://github.com/bclaywalsh/bclaywalsh-virtualpets-amok.git">(Pets Amok) Garden of Shinkai </a>- manage a garden full of Kami with their own opinions on what's best</li>
-          <li><a href="https://github.com/2020-Summer-Cohort/virtual-pet-bclaywalsh.git">(Virtual Pet) Kami Kai </a>- a tamagachi-stye virtual pet from the spirit realms of Shinto theology</li>
+          <li><button id="derelictStarButton">Derelict Star </button>- A 2D Metroidvania focusing on exploration and environment</li>
+          <li><button id="reviewsButton">Bclaywalsh Reviews: </button>- A sister website to house my reviews of my favorite media</li>
+          <li><button id="petsAmokButton">(Pets Amok) Garden of Shinkai </button>- manage a garden full of Kami with their own opinions on what's best</li>
+          <li><button id="virtualPetButton">(Virtual Pet) Kami Kai </button>- a tamagachi-stye virtual pet from the spirit realms of Shinto theology</li>
         </ul>
         <article class="article">
         </article>
@@ -104,6 +127,7 @@
             >
           </nav>
       </footer>
+      </div>
     <script src="index.js"></script>
   </body>
 </html>
