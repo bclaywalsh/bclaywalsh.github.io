@@ -74,7 +74,7 @@
 .prev,
 .next {
   cursor: pointer;
-  color: rgb(97, 80, 80);
+  color: rgb(200, 200, 200);
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -142,6 +142,7 @@
     opacity: 1;
   }
 }
+
 /* END Slideshow */
 
 .heroimage {

@@ -58,17 +58,42 @@ function currentSlide(i) {
 
 function showSlides(n){
     var s;
-    var slides = document.getElementsByClassName("mySlides");
+    // var slides = document.getElementsByClassName("mySlides");
+
+    var dSSlides = document.getElementsByClassName("myDSSlides");
+    var revSlides = document.getElementsByClassName("myRevSlides");
+
     var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex=1}
-    if (n < 1) {slideIndex = slides.length}
-    for (s=0; s<slides.length; s++) {
-        slides[s].style.display = "none";
+
+    // if (n > slides.length) {slideIndex=1}
+    // if (n < 1) {slideIndex = slides.length}
+
+    if (n > dSSlides.length) {slideIndex=1}
+    if (n < 1) {slideIndex = dSSlides.length}
+
+    if (n > revSlides.length) {slideIndex=1}
+    if (n < 1) {slideIndex = revSlides.length}
+
+    // for (s=0; s<slides.length; s++) {
+    //     slides[s].style.display = "none";
+    // }
+    // for (s=0; s<dots.length; s++) {
+    //     dots[s].className = dots[s].className.replace(" active", "");
+    // }
+    for (s=0; s<dSSlides.length; s++) {
+        dSSlides[s].style.display = "none";
     }
+    for (s=0; s<revSlides.length; s++) {
+        revSlides[s].style.display = "none";
+    }
+
+
     for (s=0; s<dots.length; s++) {
         dots[s].className = dots[s].className.replace(" active", "");
     }
-    slides[slideIndex-1].style.display = "block";
+    // slides[slideIndex-1].style.display = "block";
+    dSSlides[slideIndex-1].style.display = "block";
+    revSlides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
 
@@ -79,14 +104,18 @@ const modalReviews = document.getElementById("modal-Reviews");
 const modalPetsAmok = document.getElementById("modal-Pets-Amok");
 const modalVirtualPet = document.getElementById("modal-VirtualPet");
 
-const modals = [modalDs, modalReviews, modalPetsAmok, modalVirtualPet];
+const modals = [modalDS, modalReviews, modalPetsAmok, modalVirtualPet];
 
     //Use derelictStarButton and reviewsButton from slideshow above
 const petsAmokButton = document.getElementById("petsAmokButton");
 const virtualPetButton = document.getElementById("virtualPetButton");
 
 const span = document.getElementsByClassName("close")[0]; // ???
+// derelictStarButton.addEventListener('click', derelictStarModal);
 
+// function derelictStarModal (){
+//     console.log("firing");
+// }
 derelictStarButton.onclick = function() {
     let m;
     for(m of modals){
@@ -116,27 +145,38 @@ virtualPetButton.onclick = function() {
     modalVirtualPet.style.display = "block";
 }
 
-span.onclick = function() { //CLOSE THE MODAL WHEN CLICKING THE X
-    let m;
-    for(m of modals){
-        m.style.display="none";
+//span should be a collection
+let sp;
+for (sp of modals){
+    sp.onclick = function() { //CLOSE ANY OPEN MODAL WHEN CLICKING THE X
+        let m;
+        for(m of modals){
+            m.style.display="none";
+        }
     }
 }
+// span.onclick = function() { //CLOSE ANY OPEN MODAL WHEN CLICKING THE X
+//     let m;
+//     console.log("firing");
+//     for(m of modals){
+//         m.style.display="none";
+//     }
+// }
 
 
 // ANIMATED BOXES
-const animatedBoxesLayer = document.querySelector(".animatedBoxes");
-const box1 = document.querySelector("#animatedBox1");
-const box2 = document.querySelector("#animatedBox2");
-const box3 = document.querySelector("#animatedBox3");
-const box4 = document.querySelector("#animatedBox4");
-const box5 = document.querySelector("#animatedBox5");
-const box6 = document.querySelector("#animatedBox6");
+// const animatedBoxesLayer = document.querySelector(".animatedBoxes");
+// const box1 = document.querySelector("#animatedBox1");
+// const box2 = document.querySelector("#animatedBox2");
+// const box3 = document.querySelector("#animatedBox3");
+// const box4 = document.querySelector("#animatedBox4");
+// const box5 = document.querySelector("#animatedBox5");
+// const box6 = document.querySelector("#animatedBox6");
 
-const movingBoxes = [box1, box2, box3, box4, box5, box6];
+// const movingBoxes = [box1, box2, box3, box4, box5, box6];
 
-const viewWidth = window.innerWidth;
-const viewHeight = window.innerHeight;
+// const viewWidth = window.innerWidth;
+// const viewHeight = window.innerHeight;
 
 //Initialize Attributes
 // let x;
@@ -157,21 +197,21 @@ const viewHeight = window.innerHeight;
 // }
 
 //Move Boxes
-function moveMyBoxes(){
-    let x;
-    for (x of movingBoxes){
-        var id = setInterval(frame, 5);
-        function frame() {
-            if (pos == 350) {
-            clearInterval(id);
-            } else {
-            pos++; 
-            elem.style.top = pos + "px"; 
-            elem.style.left = pos + "px"; 
-            }
-        }
-    }
-}
+// function moveMyBoxes(){
+//     let x;
+//     for (x of movingBoxes){
+//         var id = setInterval(frame, 5);
+//         function frame() {
+//             if (pos == 350) {
+//             clearInterval(id);
+//             } else {
+//             pos++; 
+//             elem.style.top = pos + "px"; 
+//             elem.style.left = pos + "px"; 
+//             }
+//         }
+//     }
+// }
 
 // const movingBox1 = {id: 1, x : 1200, y :1000, x_scale : 1, y_scale : 1, alpha : 0.5, zoomDir : 1};
 // const movingBox2 = {id: 2, x : 1000, y :1200, x_scale : 1,  y_scale : 1, alpha : 0.5, zoomDir : 1};
