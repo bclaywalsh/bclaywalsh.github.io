@@ -9,12 +9,6 @@
 }
 
 /* NEW CODE  */
-#animate {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  background-color: rgba(200, 200, 200, 0.5);
-}
 
 .header {
   background-color: rgb(64, 58, 62);
@@ -62,12 +56,21 @@
 }
 
 .headline {
-  font-size: 3em;
-  font-weight: bold;
+  font-size: 4em;
+  /* font-weight: bold; */
+  /* font-style: italic; */
+  font-family: Inknut Antiqua, Caslon, Plantin, Garamond, Baskerville, serif;
+  text-decoration: underline;
 }
 
 .subtext {
   font-style: italic;
+}
+
+/* MODAL */
+.modal {
+  outline-style: solid;
+  outline-color: black;
 }
 
 /* Slideshow */
@@ -159,6 +162,10 @@
   box-shadow: 9px 7px 5px -6px rgba(0, 0, 0, 0.75);
 }
 
+.article {
+  font-size: 22px;
+  color: rgb(184, 178, 181);
+}
 .listofskills {
   color: rgb(184, 178, 181);
   font-weight: bold;
@@ -204,4 +211,166 @@ span.code {
 span.it {
   color: rgb(206, 36, 24);
   font-weight: bold;
+}
+
+/* ANIMATED BOXES */
+.movingBox {
+  position: absolute;
+  z-index: 22;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(10deg);
+  border-style: solid;
+  -webkit-box-shadow: 14px 27px 24px 0px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 14px 27px 24px 0px rgba(0, 0, 0, 0.14);
+  box-shadow: 14px 27px 24px 0px rgba(0, 0, 0, 0.14);
+}
+
+#animatedBox1 {
+  height: 220px;
+  animation: mymove 30s infinite;
+  animation-timing-function: linear;
+}
+
+#animatedBox2 {
+  height: 160px;
+  animation: mymove2 36s infinite;
+  animation-timing-function: linear;
+}
+
+#animatedBox3 {
+  height: 140px;
+  animation: mymove3 20s infinite;
+  animation-timing-function: linear;
+}
+
+#animatedBox4 {
+  height: 140px;
+  animation: mymove 20s infinite;
+  animation-timing-function: linear;
+}
+
+#animatedBox5 {
+  height: 140px;
+  animation: mymove2 56s infinite;
+  animation-timing-function: linear;
+}
+
+#animatedBox6 {
+  height: 140px;
+  animation: mymove3 10s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes mymove {
+  0% {
+    top: 100%;
+    left: 100%;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0);
+  }
+  20% {
+    width: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0.25);
+  }
+  40% {
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0);
+  }
+  60% {
+    width: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0.25);
+  }
+  80% {
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0);
+  }
+  100% {
+    top: -220px;
+    left: -200px;
+    width: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0.25);
+  }
+}
+
+@keyframes mymove2 {
+  0% {
+    top: 80%;
+    left: 110%;
+    width: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0.25);
+  }
+  20% {
+    width: 120px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0);
+  }
+  40% {
+    width: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0.25);
+  }
+  60% {
+    width: 120px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0);
+  }
+  80% {
+    width: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0.25);
+  }
+  100% {
+    top: -200px;
+    left: 1000px;
+    width: 120px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes mymove3 {
+  0% {
+    top: 120%;
+    left: 80%;
+    width: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0.25);
+  }
+  20% {
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0);
+  }
+  40% {
+    width: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0.25);
+  }
+  60% {
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0);
+  }
+  80% {
+    width: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0.25);
+  }
+  100% {
+    top: 50%;
+    left: -200px;
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0);
+  }
 }

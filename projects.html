@@ -17,6 +17,7 @@
               <a href="index.html">Home</a>
               <a href="aboutme.html">About Me</a>
               <a href="projects.html">Projects</a>
+              <p>-----------------------</p>
               <a href="http://www.linkedin.com/in/benjamin-walsh-46899445"
                 >linkedIn</a
               >
@@ -70,6 +71,23 @@
           <a class="prev" onclick="plusSlides(-1)">&#10094</a>
           <a class="next" onclick="plusSlides(1)">&#10095</a>
         </div>
+
+        <div class="slideshow-container-garden">
+          <div class="myGardenSlides fade">
+            <img class = "glorious" src="assets/images/gardenOfShinkai1.png" alt="">
+            <div class="text"></div>
+          </div>
+          <div class="myGardenSlides fade">
+            <img class = "glorious" src="assets/images/gardenOfShinkai2.png" alt="">
+            <div class="text"></div>
+          </div>
+          <div class="myGardenSlides fade">
+            <img class = "glorious" src="assets/images/gardenOfShinkai3.png" alt="">
+            <div class="text"></div>
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+          <a class="next" onclick="plusSlides(1)">&#10095</a>
+        </div>
         
         <div style="text-align:center">
           <span class="dot" onclick="currentSlide(1)"></span>
@@ -82,36 +100,38 @@
           alt="Power Armored Character looking over their shoulder at viewer"
         /> -->
         <!-- <h3 class="subtext">If something is worth doing, it's worth doing well</h3> -->
-        <div id="modal-DerelictStar" class="modal">
+        <div class="modalContainer">
+          <div id="modal-DerelictStar" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Derelict Star is my personal vision of what a Metroid game could be. It takes most of the mechanics of the classic Metroid games, adds in some melee combat reminiscent of Castlevania, and throws in some of my favorite content from various other games (Flight from Ranger-x, vehicular action scenes from Earthworm Jim, and drones similar to various space-shooters). <br><br>It's hard to think of truly original content for a 2D action platformer at this day and age, but by combining my favorites and tweaking them to work cohesively I think the overall effect will be quite rewarding in its own rite.</p>
+              </div>
+          </div>
+          <div id="modal-Reviews" class="modal">
             <div class="modal-content">
               <span class="close">&times;</span>
-              <p>Derelict Star is my personal vision of what a Metroid game could be. It takes most of the mechanics of the classic Metroid games, adds in some melee combat reminiscent of Castlevania, and throws in some of my favorite content from various other games (Flight from Ranger-x, vehicular action scenes from Earthworm Jim, and drones similar to various space-shooters). It's hard to think of truly original content for a 2D action platformer at this day and age, but by combining my favorites and tweaking them to work cohesively I think the overall effect will be quite rewarding in its own rite.</p>
+              <p>My reviews site started off as a series of projects for WCCI, but I intend it to take off and become a true reviews site of my own personal library of favorites.</p>
             </div>
-        </div>
-        <div id="modal-Reviews" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>My reviews site started off as a series of projects for WCCI, but I intend it to take off and become a true reviews site of my own personal library of favorites.</p>
           </div>
-        </div>
-        <div id="modal-Pets-Amok" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Pet's Amok (Garden of Shinkai) was the first Java project that I went overboard on. It's a (Java) console game that at this time only interacts through text, but could be made into a full-fledged app similar to some Gocha games. The player begins with a semi-random set of Spirits with which they are tasked to heal and nurture. At any time they can summon new spirits into their garden, or release a spirit out into the great beyond. The state of a spirit being released will have an impact on your overall Karma, so you are encouraged to treat the spirits well. Each spirit has a set of attributes that is determined by its nature, and must be dealt with in an essentially unique way.</p>
+          <div id="modal-Pets-Amok" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>Pet's Amok (Garden of Shinkai) was the first Java project that I went overboard on. It's a (Java) console game that at this time only interacts through text, but could be made into a full-fledged app similar to some Gocha games. <br><br>The player begins with a semi-random set of Spirits with which they are tasked to heal and nurture. At any time they can summon new spirits into their garden, or release a spirit out into the great beyond. The state of a spirit being released will have an impact on your overall Karma, so you are encouraged to treat the spirits well. <br><br>Each spirit has a set of attributes that is determined by its nature, and must be dealt with in an essentially unique way without knowing precisely what the consequences will be.</p>
+            </div>
           </div>
-        </div>
-        <div id="modal-VirtualPet" class="modal">
+          <div id="modal-VirtualPet" class="modal">
           <div class="modal-content">
             <span class="close">&times;</span>
             <p>The Virtual Pet app is a prototype for Garden of Shinkai, in that it focuses in tightly on a single spirit companion. In this version, you are a human medium who can interact with spirits directly once per year.</p>
           </div>
         </div>
-        <ul class="projectlist">
-          <li><button id="derelictStarButton">Derelict Star </button>- A 2D Metroidvania focusing on exploration and environment</li>
-          <li><button id="reviewsButton">Bclaywalsh Reviews: </button>- A sister website to house my reviews of my favorite media</li>
-          <li><button id="petsAmokButton">(Pets Amok) Garden of Shinkai </button>- manage a garden full of Kami with their own opinions on what's best</li>
-          <li><button id="virtualPetButton">(Virtual Pet) Kami Kai </button>- a tamagachi-stye virtual pet from the spirit realms of Shinto theology</li>
-        </ul>
+        </div>
+          <ul class="projectlist">
+            <li><a id="derelictStarButton">Derelict Star </a>- A 2D Metroidvania focusing on exploration and environment</li>
+            <li><a id="reviewsButton">Bclaywalsh Reviews: </a>- A sister website to house my reviews of my favorite media</li>
+            <li><a id="petsAmokButton">(Pets Amok) Garden of Shinkai </a>- manage a garden full of Kami with their own opinions on what's best</li>
+            <li><a id="virtualPetButton">(Virtual Pet) Kami Kai </a>- a tamagachi-stye virtual pet from the spirit realms of Shinto theology</li>
+          </ul>
         <article class="article">
         </article>
         <article class="article">
