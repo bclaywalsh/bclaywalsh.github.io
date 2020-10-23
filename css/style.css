@@ -247,20 +247,68 @@ span.it {
 }
 
 #animatedBox4 {
-  height: 140px;
+  height: 180px;
+  margin-top: 20%;
+  margin-left: 300px;
   animation: mymove 20s infinite;
   animation-timing-function: linear;
 }
 
 #animatedBox5 {
-  height: 140px;
+  height: 320px;
+  margin-bottom: 300px;
   animation: mymove2 56s infinite;
   animation-timing-function: linear;
 }
 
 #animatedBox6 {
-  height: 140px;
+  height: 110px;
+  margin-left: 20px;
+  margin-bottom: 30%;
   animation: mymove3 10s infinite;
+  animation-timing-function: linear;
+}
+
+#animatedBox7 {
+  height: 100px;
+  animation: mymove 16s infinite;
+  animation-timing-function: linear;
+}
+
+#animatedBox8 {
+  height: 190px;
+  animation: mymove2 63s infinite;
+  animation-timing-function: linear;
+}
+
+#animatedBox9 {
+  height: 240px;
+  margin-left: 600px;
+  animation: mymove3 29s infinite;
+  animation-timing-function: linear;
+}
+
+#animatedBox10 {
+  height: 150px;
+  margin-bottom: 20%;
+  margin-left: 60px;
+  animation: mymove 26s infinite;
+  animation-timing-function: linear;
+}
+
+#animatedBox11 {
+  height: 180px;
+  margin-bottom: 20px;
+  margin-left: 20%;
+  animation: mymove2 25s infinite;
+  animation-timing-function: linear;
+}
+
+#animatedBox12 {
+  height: 360px;
+  margin-left: -20px;
+  margin-top: 10%;
+  animation: mymove3 69s infinite;
   animation-timing-function: linear;
 }
 
