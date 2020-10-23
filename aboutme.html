@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css\layout.css" />
     <link rel="stylesheet" href="css\style.css" />
     <title>About Me - Benjamin Walsh</title>
@@ -11,16 +12,31 @@
     <div class="container">
       <header class="header">
         <nav class="top-navigation">
-          <a href="index.html">Home</a>
-          <a href="aboutme.html">About Me</a>
-          <a href="projects.html">Projects</a>
+          <div id="myLinks">
+            <div class="dropDown">
+              <a href="index.html">Home</a>
+              <a href="aboutme.html">About Me</a>
+              <a href="projects.html">Projects</a>
+              <p>-----------------------</p>
+              <a href="http://www.linkedin.com/in/benjamin-walsh-46899445"
+                >linkedIn</a
+              >
+              <a href="https://github.com/bclaywalsh">GitHub</a>
+              <a href="http://bclaywalsh.wixsite.com/portfolio">art portfolio</a>
+            </div>
+          <!-- <p><button onclick="myMove()">Click Me</button></p> -->
+          </div>
+        
+          <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+            <i class="fa fa-bars"></i>
+          </a>
         </nav>
       </header>
       <main>
         <h1 class="headline">About Me</h1>
         <img
           class="headshot"
-          src="assets\Portrait1TransparentSquareMinimal.png"
+          src="assets\images\Portrait1TransparentSquareMinimal.png"
           alt="head shot"
         />
         <h3 class="subtext">Nevermind all that</h3>
@@ -52,6 +68,8 @@
             <li>Remote Capable</li>
             <li>GML</li>
             <li>JPA</li>
+            <li>Sprite Animation</li>
+            <li>UV Mapping</li>
           </ul>
           <ul>
             <li>Javscript</li>
@@ -61,6 +79,8 @@
             <li>Grid</li>
             <li>TDD</li>
             <li>OOP</li>
+            <li>Autodesk Maya</li>
+            <li>Weight painting</li>
           </ul>
           <ul>
             <li>JSON</li>
@@ -70,6 +90,7 @@
             <li>Photoshop</li>
             <li>Jummbox</li>
             <li>Traditional Arts</li>
+            <li>Skeletal Rigging</li>
           </ul>
         </div>
         <h2>
@@ -94,5 +115,6 @@
         </nav>
       </footer>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
