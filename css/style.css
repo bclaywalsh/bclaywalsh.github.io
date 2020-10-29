@@ -216,7 +216,7 @@ span.it {
 /* ANIMATED BOXES */
 .movingBox {
   position: absolute;
-  z-index: 5;
+  z-index: 20;
   overflow: hidden;
   display: flex;
   justify-content: center;
