@@ -1,4 +1,4 @@
-.container {
+.body {
   background-image: linear-gradient(rgb(110, 103, 108), rgba(57, 54, 56));
 }
 
@@ -215,7 +215,7 @@ span.it {
 /* ANIMATED BOXES */
 .movingBox {
   position: absolute;
-  z-index: 20;
+  z-index: 6;
   overflow: hidden;
   display: flex;
   justify-content: center;

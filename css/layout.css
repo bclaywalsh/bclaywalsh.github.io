@@ -1,7 +1,7 @@
 html,
 body {
-  min-width: 100vw;
-  min-height: 120vh;
+  min-width: 100%;
+  min-height: 120%;
   padding: 0;
   margin: 0;
   -webkit-background-size: cover;
@@ -10,14 +10,17 @@ body {
   background-size: cover;
 }
 
-.container {
+.body {
   margin: 0;
   padding: 0;
-  min-width: 100vw;
-  min-height: 120vh;
+  min-width: 100%;
+  height: 120%;
   top: 0;
-  position: static;
-  background-size: absolute;
+  position: absolute;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /* .movingBox {
