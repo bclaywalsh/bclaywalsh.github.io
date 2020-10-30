@@ -6,12 +6,13 @@
   border-style: solid;
 }
 
-/* NEW CODE  */
-
 .header {
   background-color: rgb(64, 58, 62);
 }
 
+.headline {
+  background-color: rgba(0, 0, 0, 0.2);
+}
 .topnav #myLinks {
   display: none;
 }

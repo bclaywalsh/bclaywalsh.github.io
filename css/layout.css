@@ -82,6 +82,11 @@ body {
   align-items: flex-end;
   justify-content: center;
   padding-top: 10px;
+  position: relative;
+  margin-left: 35%;
+  margin-right: 35%;
+  text-align: center;
+  padding-bottom: 55vh;
 }
 
 .subtext {
@@ -91,6 +96,15 @@ body {
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
+}
+
+.subtextHome {
+  top: 0;
+  width: 100%;
+  text-align: center;
+  padding-top: 110px;
+  position: absolute;
+  z-index: 100;
 }
 
 /* SLIDESHOW */
@@ -198,18 +212,21 @@ body {
 }
 /* Modal End */
 
-.heroimage {
-  position: relative;
+.herowrapper {
+  position: absolute;
   z-index: 2;
   display: flex;
-  flex-direction: row;
-  margin: 2rem auto;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  top: 15%;
+  margin-bottom: 15%;
+}
+
+.heroimage {
   border-style: outset;
   border-radius: 20px;
-  width: 400px;
   max-width: 70%;
-  max-height: 70%;
-  margin-bottom: 15%;
 }
 
 .headshot {
