@@ -165,18 +165,3 @@ for (sp of modals){
 //         m.style.display="none";
 //     }
 // }
-
-
-// ANIMATED BOXES
-const animatedBoxesLayer = document.querySelector(".animatedBoxes");
-const box1 = document.querySelector("#animatedBox1");
-const box2 = document.querySelector("#animatedBox2");
-const box3 = document.querySelector("#animatedBox3");
-const box4 = document.querySelector("#animatedBox4");
-const box5 = document.querySelector("#animatedBox5");
-const box6 = document.querySelector("#animatedBox6");
-const myMove = css.myMove;
-const movingBoxes = [box1, box2, box3, box4, box5, box6];
-
-const viewWidth = window.innerWidth;
-const viewHeight = window.innerHeight;
