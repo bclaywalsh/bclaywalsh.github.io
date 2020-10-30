@@ -1,19 +1,18 @@
-.container {
+.body {
   background-image: linear-gradient(rgb(110, 103, 108), rgba(57, 54, 56));
-  /* NEW CODE  */
-  /* position: relative; */
 }
 
 .movingBox {
   border-style: solid;
 }
 
-/* NEW CODE  */
-
 .header {
   background-color: rgb(64, 58, 62);
 }
 
+.headline {
+  background-color: rgba(0, 0, 0, 0.2);
+}
 .topnav #myLinks {
   display: none;
 }
@@ -31,6 +30,7 @@
 .top-navigation a.icon {
   display: block;
   position: absolute;
+  z-index: 50;
   left: 0;
   top: 0;
 }
@@ -216,7 +216,7 @@ span.it {
 /* ANIMATED BOXES */
 .movingBox {
   position: absolute;
-  z-index: 22;
+  z-index: 6;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -248,15 +248,15 @@ span.it {
 
 #animatedBox4 {
   height: 180px;
-  margin-top: 20%;
-  margin-left: 300px;
+  margin-top: 60px;
+  margin-left: 30px;
   animation: mymove 20s infinite;
   animation-timing-function: linear;
 }
 
 #animatedBox5 {
   height: 320px;
-  margin-bottom: 300px;
+  margin-bottom: 30px;
   animation: mymove2 56s infinite;
   animation-timing-function: linear;
 }
@@ -264,7 +264,7 @@ span.it {
 #animatedBox6 {
   height: 110px;
   margin-left: 20px;
-  margin-bottom: 30%;
+  margin-bottom: 96px;
   animation: mymove3 10s infinite;
   animation-timing-function: linear;
 }
@@ -283,14 +283,14 @@ span.it {
 
 #animatedBox9 {
   height: 240px;
-  margin-left: 600px;
+  margin-left: 60px;
   animation: mymove3 29s infinite;
   animation-timing-function: linear;
 }
 
 #animatedBox10 {
   height: 150px;
-  margin-bottom: 20%;
+  margin-bottom: 224px;
   margin-left: 60px;
   animation: mymove 26s infinite;
   animation-timing-function: linear;
@@ -299,7 +299,7 @@ span.it {
 #animatedBox11 {
   height: 180px;
   margin-bottom: 20px;
-  margin-left: 20%;
+  margin-left: 205px;
   animation: mymove2 25s infinite;
   animation-timing-function: linear;
 }
@@ -342,7 +342,7 @@ span.it {
   }
   100% {
     top: -220px;
-    left: -200px;
+    left: -400px;
     width: 0px;
     background-color: rgba(255, 255, 255, 0);
     border-color: rgba(255, 255, 255, 0.25);
@@ -379,7 +379,7 @@ span.it {
   }
   100% {
     top: -200px;
-    left: 1000px;
+    left: -200px;
     width: 120px;
     background-color: rgba(255, 255, 255, 0.25);
     border-color: rgba(255, 255, 255, 0);
@@ -415,7 +415,7 @@ span.it {
     border-color: rgba(255, 255, 255, 0.25);
   }
   100% {
-    top: 50%;
+    top: 0%;
     left: -200px;
     width: 100px;
     background-color: rgba(255, 255, 255, 0.25);
