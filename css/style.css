@@ -1,4 +1,10 @@
 .body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
   background-image: linear-gradient(rgb(110, 103, 108), rgba(57, 54, 56));
 }
 
@@ -8,6 +14,9 @@
 
 .header {
   background-color: rgb(64, 58, 62);
+  -webkit-box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.25);
 }
 
 .headline {
@@ -149,7 +158,10 @@
 /* END Slideshow */
 
 .heroimage {
-  background-image: linear-gradient(rgb(155, 180, 154), rgb(48, 54, 51));
+  border-style: outset;
+  border-radius: 20px;
+  border-color: rgb(197, 168, 73);
+  /* background-image: linear-gradient(rgb(155, 180, 154), rgb(48, 54, 51)); */
   -webkit-box-shadow: 9px 7px 5px -6px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 9px 7px 5px -6px rgba(0, 0, 0, 0.75);
   box-shadow: 9px 7px 5px -6px rgba(0, 0, 0, 0.75);
@@ -179,6 +191,15 @@
 .projectlist a {
   color: rgb(184, 178, 181);
   font-weight: bold;
+}
+
+.inset-left,
+.inset-right,
+.headline,
+.inset-mid {
+  -webkit-box-shadow: inset 0px 0px 77px 0px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: inset 0px 0px 77px 0px rgba(0, 0, 0, 0.14);
+  box-shadow: inset 0px 0px 77px 0px rgba(0, 0, 0, 0.14);
 }
 
 .footer {
