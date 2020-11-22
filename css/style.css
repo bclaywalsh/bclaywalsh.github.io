@@ -19,9 +19,6 @@
   box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.25);
 }
 
-.headline {
-  background-color: rgba(0, 0, 0, 0.2);
-}
 .topnav #myLinks {
   display: none;
 }
@@ -31,9 +28,10 @@
 }
 
 .top-navigation a {
-  color: rgb(167, 141, 157);
+  color: rgb(99, 82, 93);
   font-weight: bold;
   display: block;
+  transition: 0.5s;
 }
 
 .top-navigation a.icon {
@@ -42,17 +40,28 @@
   z-index: 50;
   left: 0;
   top: 0;
+  height: 8vh;
+  width: 8vh;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+}
+
+.fa {
+  font-size: 7rem;
+  width: 8vh;
+  height: 8vh;
 }
 
 .top-navigation a:hover {
-  color: white;
+  color: rgb(145, 129, 129);
+  transition: 0.5s;
 }
 
 .dropDown a:hover {
   text-decoration: underline;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 15px;
-  width: 90%;
+  width: 80%;
   margin-left: 10px;
   color: rgb(228, 207, 220);
   -webkit-box-shadow: 10px 10px 9px -1px rgba(0, 0, 0, 0.24);
@@ -65,7 +74,6 @@
 }
 
 .headline {
-  font-size: 4em;
   /* font-weight: bold; */
   /* font-style: italic; */
   font-family: Inknut Antiqua, Caslon, Plantin, Garamond, Baskerville, serif;
@@ -195,7 +203,6 @@
 
 .inset-left,
 .inset-right,
-.headline,
 .inset-mid {
   -webkit-box-shadow: inset 0px 0px 77px 0px rgba(0, 0, 0, 0.14);
   -moz-box-shadow: inset 0px 0px 77px 0px rgba(0, 0, 0, 0.14);

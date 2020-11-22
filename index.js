@@ -8,6 +8,13 @@ function hamburgerMenu () {
     }
 }
 
+const bCard = document.getElementsByClassName("flip-card-container");
+bCard.addEventListener("click",function(goToMe));
+function goToMe {
+    return "aboutme.html";
+}
+
+
 // Slideshow Switch Subject
 const reviewsSlideshow = document.querySelector(".slideshow-container-reviews");
 const derelictStarSlideshow = document.querySelector(".slideshow-container-derelict-star");
