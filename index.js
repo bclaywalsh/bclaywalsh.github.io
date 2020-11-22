@@ -9,10 +9,10 @@ function hamburgerMenu () {
 }
 
 const bCard = document.getElementsByClassName("flip-card-container");
-bCard.addEventListener("click",function(goToMe));
-function goToMe {
-    return "aboutme.html";
-}
+// bCard.addEventListener("click", goToMe);
+// function goToMe () {
+//     window.location.replace("http://www.w3schools.com");
+// }
 
 
 // Slideshow Switch Subject

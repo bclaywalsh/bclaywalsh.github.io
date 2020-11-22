@@ -1,3 +1,8 @@
+html,
+body {
+  font-family: Cambria;
+}
+
 .body {
   position: absolute;
   top: 0;
@@ -76,7 +81,7 @@
 .headline {
   /* font-weight: bold; */
   /* font-style: italic; */
-  font-family: Inknut Antiqua, Caslon, Plantin, Garamond, Baskerville, serif;
+  /* font-family: Inknut Antiqua, Caslon, Plantin, Garamond, Baskerville, serif; */
   text-decoration: underline;
 }
 
