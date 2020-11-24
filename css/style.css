@@ -33,7 +33,7 @@ body {
 }
 
 .top-navigation a {
-  color: rgb(99, 82, 93);
+  color: rgb(209, 193, 203);
   font-weight: bold;
   display: block;
   transition: 0.5s;
@@ -66,9 +66,9 @@ body {
   text-decoration: underline;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 15px;
-  width: 80%;
+  /* width: 80%; */
   margin-left: 10px;
-  color: rgb(228, 207, 220);
+  color: white;
   -webkit-box-shadow: 10px 10px 9px -1px rgba(0, 0, 0, 0.24);
   -moz-box-shadow: 10px 10px 9px -1px rgba(0, 0, 0, 0.24);
   box-shadow: 10px 10px 9px -1px rgba(0, 0, 0, 0.24);

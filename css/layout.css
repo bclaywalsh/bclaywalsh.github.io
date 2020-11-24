@@ -84,6 +84,7 @@ main {
 .dropDown a {
   font-size: 2rem;
   margin-bottom: 1rem;
+  width: 80%;
 }
 
 .sideLink {
@@ -265,6 +266,11 @@ main {
   margin: 1rem;
 }
 
+.headshot:hover {
+  transform: rotate(1080deg);
+  transition: 3s;
+}
+
 .personalLinks {
   display: flex;
   flex-direction: column;
@@ -434,7 +440,8 @@ main {
 }
 .listofskills > ul > li {
   text-align: left;
-  margin-left: 30%;
+  margin: 0.5rem;
+  font-size: 1.5rem;
 }
 
 .resumedownload {
