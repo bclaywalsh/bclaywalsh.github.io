@@ -52,7 +52,7 @@ body {
 }
 
 .fa {
-  font-size: 7rem;
+  font-size: 8vh;
   width: 8vh;
   height: 8vh;
 }
@@ -115,7 +115,6 @@ body {
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
-  position: absolute;
   bottom: 8px;
   width: 100%;
   text-align: center;
@@ -146,7 +145,7 @@ body {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 0.2s;
 }
 
 @-webkit-keyframes fade {
@@ -200,7 +199,7 @@ body {
   font-weight: bold;
 }
 
-.projectlist a {
+.projectlist span {
   color: rgb(184, 178, 181);
   font-weight: bold;
 }

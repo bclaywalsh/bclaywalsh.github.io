@@ -77,8 +77,8 @@ main {
   /* margin-left: -10px; */
   min-width: 18vw;
   position: relative;
-  z-index: 28;
   padding: 1rem;
+  z-index: 500;
 }
 
 .dropDown a {
@@ -89,7 +89,7 @@ main {
 .sideLink {
   padding: 1rem 2rem;
   position: relative;
-  z-index: 29;
+  z-index: 501;
   font-size: 2rem;
 }
 
@@ -156,9 +156,6 @@ main {
   display: flex;
   justify-content: center;
 }
-.mySlides {
-  /* display: none; */
-}
 
 .prev,
 .next {
@@ -185,37 +182,34 @@ main {
   align-items: center;
   /* position: absolute;
   top: 50vh; */
-  width: 100%;
 }
 .modal {
   /* display: none; */
-  position: static;
-  z-index: 10;
-  width: 60%;
+  position: absolute;
+  width: 30vw;
+  top: 10vh;
+  right: 0;
+  z-index: 1;
   height: 100%;
   overflow: auto;
-  padding: 20px;
-  margin: 20px;
-  font-size: 20px;
+  padding: 1rem;
+  font-size: 1.5rem;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.5);
 }
-/* 
-#modal-DerelictStar {
-} */
-#modal-Reviews {
-  display: none;
-}
-#modal-Pets-Amok {
-  display: none;
-}
-#modal-VirtualPet {
+
+#modal-DerelictStar,
+#modal-Reviews,
+#modal-Pets-Amok,
+#modal-VirtualPet,
+#modal-Aquarium,
+#modal-BAB {
   display: none;
 }
 
 .modal-content {
   color: white;
-  border: 1px solid black;
+  border: 1px solid transparent;
   width: 100%;
 }
 
@@ -259,7 +253,7 @@ main {
   border-radius: 10px;
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.2);
-  max-height: 55vh;
+  /* max-height: 55vh; */
 }
 .headshot-container {
   /* width: 100%;
@@ -296,7 +290,7 @@ main {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 0.6fr 1fr 1.3fr;
+  grid-template-columns: 20vw 1fr 1.3fr;
   padding: 0 10vh;
 }
 .headshot {
@@ -321,10 +315,24 @@ main {
 .slide-shows {
   width: 100%;
   display: flex;
-  justify-content: center;
-  /* position: absolute;
-  top: 80px; */
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  border-radius: 40px;
+  /* top: 80px; */
   /* height: 42vh; */
+}
+
+.glorious:hover > .slide-shows {
+  transform: scale(2.5);
+  margin-left: 10vw;
+  margin-top: 12vh;
+  transition: 0.2s;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 0 2rem 1rem 2rem;
+  border-style: solid;
+  border-color: rgb(150, 150, 150);
 }
 
 .dots {
@@ -339,24 +347,31 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   margin: 2rem auto;
   margin-bottom: 10px;
   border-style: outset;
   border-radius: 20px;
-  /* width: 100%; */
-  height: 39vh;
+  width: 100%;
+  position: relative;
+  z-index: 110;
+  padding: 0, 2rem, 1rem, 2rem;
+
+  /* height: 39vh; */
   /* max-width: 50vw; */
 }
 
+.glorious:hover {
+  /* transform: scale(2); */
+}
 .slideshow-container-derelict-star,
 .slideshow-container-garden,
 .slideshow-container-reviews {
-  height: 34vh;
-
   /* position: absolute;
   margin: 10px auto;
   top: 60px; */
+
+  /* width: 100%; */
 }
 
 .myGardenSlides,
@@ -364,26 +379,27 @@ main {
 .myDSSlides {
   /* position: absolute; */
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .article-box {
   background-color: rgb(57, 54, 56);
   position: relative;
   z-index: 4;
-  padding: 1rem 25rem 0 1rem;
-  margin: 20px auto;
-  width: 100%;
+  padding: 1rem;
+  margin: 2rem;
   grid-row: 0 / 3;
-  /* height: 45vh; */
+  height: 70vh;
+  width: 45vw;
+  overflow: auto;
 }
 .article {
-  margin: 1rem auto;
-  max-width: 700px;
+  margin: 1rem;
+  /* max-width: 700px; */
   position: relative;
   z-index: 100;
 }
@@ -428,19 +444,37 @@ main {
 }
 
 .projectlist {
-  /* padding: 30px; */
-  padding-right: 18%;
-  height: 100px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  margin-left: 25%;
-  margin-bottom: 100px;
+  width: 62vw;
+  overflow: auto;
+  position: absolute;
+  left: 2rem;
+  top: 60vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  height: 22vh;
 }
 
 .projectlist:hover {
-  text-decoration: none;
+  z-index: 100;
+}
+
+.projectlist li {
+  margin: 0.3rem;
+  font-size: 1.3rem;
+  color: rgb(150, 150, 150);
+}
+
+.projectLink {
+  font-size: 1.6rem;
+  color: white;
+}
+.projectLink:hover {
+  z-index: 101;
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .footer {
