@@ -8,10 +8,20 @@ function hamburgerMenu () {
     }
 }
 
+const bCard = document.getElementsByClassName("flip-card-container");
+// bCard.addEventListener("click", goToMe);
+// function goToMe () {
+//     window.location.replace("http://www.w3schools.com");
+// }
+
+
 // Slideshow Switch Subject
 const reviewsSlideshow = document.querySelector(".slideshow-container-reviews");
 const derelictStarSlideshow = document.querySelector(".slideshow-container-derelict-star");
 const gardenSlideshow = document.querySelector(".slideshow-container-garden");
+const aquariumSlideshow = document.querySelector(".slideshow-container-aquarium");
+const babSlideshow = document.querySelector(".slideshow-container-bab");
+
 
 const slideShows = [reviewsSlideshow, derelictStarSlideshow, gardenSlideshow];
 
@@ -19,11 +29,16 @@ const reviewsButton = document.getElementById("reviewsButton");
 const derelictStarButton = document.getElementById("derelictStarButton");
 const gardenButton = document.getElementById("petsAmokButton");
 
+const aquariumBotton = document.getElementById("aquariumButton");
+const babButton = document.getElementById("borrow-a-buddyButton");
 
 
 derelictStarButton.addEventListener('click', openDerelictStarSlides);
 reviewsButton.addEventListener('click', openReviewsSlides);
 gardenButton.addEventListener('click', openGardenSlides);
+
+aquariumButton.addEventListener('click', openAquariumSlides);
+babButton.addEventListener('click', openBABSlides);
 
 
 function openDerelictStarSlides(){
@@ -49,6 +64,23 @@ function openGardenSlides(){
     }
     gardenSlideshow.style.display="block";
 }
+
+function openAquariumSlides(){
+    let x;
+    for(x of slideShows) {
+        x.style.display="none";
+    }
+    aquariumSlideshow.style.display="block";
+}
+
+function openBABSlides(){
+    let x;
+    for(x of slideShows) {
+        x.style.display="none";
+    }
+    babSlideshow.style.display="block";
+}
+
 
 // Slideshow
 var slideIndex = 1;
@@ -107,7 +139,12 @@ const modalReviews = document.getElementById("modal-Reviews");
 const modalPetsAmok = document.getElementById("modal-Pets-Amok");
 const modalVirtualPet = document.getElementById("modal-VirtualPet");
 
-const modals = [modalDS, modalReviews, modalPetsAmok, modalVirtualPet];
+const modalAquarium = document.getElementById("modal-Aquarium");
+const modalBAB = document.getElementById("modal-BAB");
+
+
+
+const modals = [modalDS, modalReviews, modalPetsAmok, modalVirtualPet, modalAquarium, modalBAB];
 
     //Use derelictStarButton and reviewsButton from slideshow above
 const petsAmokButton = document.getElementById("petsAmokButton");
@@ -146,6 +183,20 @@ virtualPetButton.onclick = function() {
         m.style.display="none";
     }
     modalVirtualPet.style.display = "block";
+}
+aquariumButton.onclick = function() {
+    let m;
+    for(m of modals){
+        m.style.display="none";
+    }
+    modalAquarium.style.display = "block";
+}
+babButton.onclick = function() {
+    let m;
+    for(m of modals){
+        m.style.display="none";
+    }
+    modalBAB.style.display = "block";
 }
 
 //span should be a collection
