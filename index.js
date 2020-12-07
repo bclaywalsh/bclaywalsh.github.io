@@ -210,6 +210,13 @@ aquariumButton.onclick = function() {
     }
     modalAquarium.style.display = "block";
 }
+babButton.onclick = function() {
+    let m;
+    for(m of modals){
+        m.style.display="none";
+    }
+    modalBAB.style.display = "block";
+}
 const images = document.getElementsByClassName("glorious").
 babButton.onclick = function() {
     let m;

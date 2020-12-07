@@ -124,8 +124,8 @@ main {
 
 /* SLIDESHOW */
 .slideshow-container-BAB {
-  max-width: 500px;
-  min-width: 50%;
+  max-width: 70vw;
+  max-height: 70vh;
   position: relative;
   /* margin: auto; */
   display: flex;
@@ -133,8 +133,8 @@ main {
 }
 
 .slideshow-container-reviews {
-  width: 70%;
-  min-width: 50%;
+  max-width: 70vw;
+  max-height: 70vh;
   position: relative;
   /* margin: auto; */
   display: none;
@@ -142,8 +142,8 @@ main {
 }
 
 .slideshow-container-derelict-star {
-  max-width: 500px;
-  min-width: 50%;
+  max-width: 70vw;
+  max-height: 70vh;
   position: relative;
   display: none;
   justify-content: center;
@@ -151,8 +151,16 @@ main {
 }
 
 .slideshow-container-garden {
-  max-width: 500px;
-  min-width: 50%;
+  max-width: 70vw;
+  max-height: 70vh;
+  position: relative;
+  display: none;
+  justify-content: center;
+}
+
+.slideshow-container-aquarium {
+  max-width: 70vw;
+  max-height: 70vh;
   position: relative;
   display: none;
   justify-content: center;
@@ -211,8 +219,7 @@ main {
 #modal-Reviews,
 #modal-Pets-Amok,
 #modal-VirtualPet,
-#modal-Aquarium,
-#modal-BAB {
+#modal-Aquarium {
   display: none;
 }
 
@@ -304,7 +311,7 @@ main {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 20vw 1fr 1.3fr;
+  grid-template-columns: 10vw 3fr 1.5fr;
   padding: 0 10vh;
 }
 .headshot {
@@ -328,25 +335,30 @@ main {
 
 .slide-shows {
   width: 100%;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  z-index: 10;
+  z-index: 1;
   border-radius: 40px;
   /* top: 80px; */
   /* height: 42vh; */
 }
 
-.glorious:hover > .slide-shows {
-  transform: scale(2.5);
-  margin-left: 10vw;
-  margin-top: 12vh;
-  transition: 0.2s;
-  background-color: rgba(0, 0, 0, 0.75);
-  padding: 0 2rem 1rem 2rem;
-  border-style: solid;
-  border-color: rgb(150, 150, 150);
+.glorious:hover > .dots {
+  position: absolute;
+  top: 5vh;
+  /* display: none; */
+}
+
+.glorious:hover > .slideshow-container-aquarium,
+.glorious:hover > .slideshow-container-BAB,
+.glorious:hover > .slideshow-container-derelict-star,
+.glorious:hover > .slideshow-container-garden,
+.glorious:hover > .slideshow-container-reviews {
+  max-height: 80vh;
+  max-width: 80vw;
 }
 
 .dots {
@@ -366,9 +378,11 @@ main {
   margin-bottom: 10px;
   border-style: outset;
   border-radius: 20px;
-  width: 100%;
+  /* width: 100%; */
+  max-height: 40vh;
+  max-width: 50vw;
   position: relative;
-  z-index: 110;
+  z-index: 3;
   padding: 0, 2rem, 1rem, 2rem;
 
   /* height: 39vh; */
@@ -376,7 +390,14 @@ main {
 }
 
 .glorious:hover {
-  /* transform: scale(2); */
+  position: absolute;
+  top: 10vh;
+  left: 10vh;
+  max-width: 70vw;
+  max-height: 70vh;
+  z-index: 111;
+  transform: scale(1.5);
+  /* transition: 0.2s; */
 }
 .slideshow-container-derelict-star,
 .slideshow-container-garden,
@@ -394,14 +415,14 @@ main {
 .myBABSlides,
 .myAquariumSlides {
   /* position: absolute; */
-  max-width: 100%;
-  max-height: 80vh;
+  max-width: 50vw;
+  max-height: 38vh;
   /* height: 100%; */
   display: flex;
   flex-direction: row;
   justify-content: center;
   position: relative;
-  z-index: 1;
+  z-index: 5;
   /* align-items: center; */
 }
 
@@ -411,20 +432,20 @@ main {
 .myBABSlides:hover,
 .myAquariumSlides:hover {
   /* transform: scale(2); */
-  max-height: 80vh;
-  max-width: 80vw;
-  display: relative;
-  z-index: 100;
-  transition: 0.2s;
+  /* height: 80vh; */
+  /* max-width: 80vw; */
+  /* display: relative; */
+  /* z-index: 100;
+  transition: 0.2s; */
 }
 
-.myGardenSlides:hover > .slideshows,
+/* .myGardenSlides:hover > .slideshows,
 .myRevSlides:hover > .slideshows,
 .myDSSlide:hover > .slideshows,
 .myBABSlides:hover > .slideshows,
 .myAquariumSlides:hover > .slideshows {
   display: none;
-}
+} */
 
 .article-box {
   background-color: rgb(57, 54, 56);
@@ -489,13 +510,16 @@ main {
   justify-content: space-between;
   flex-direction: column;
   width: 62vw;
+  height: 22vh;
   overflow: auto;
   position: absolute;
+  z-index: 10;
   left: 2rem;
   top: 60vh;
   background-color: rgba(0, 0, 0, 0.4);
   padding: 1rem;
-  height: 22vh;
+
+  list-style: none;
 }
 
 .projectlist:hover {
@@ -563,7 +587,7 @@ main {
 .inset-mid {
   margin: 0;
   position: absolute;
-  z-index: 3;
+  z-index: 0;
   width: 30vw;
   left: 35vw;
   height: 80vh;
