@@ -20,10 +20,10 @@ const reviewsSlideshow = document.querySelector(".slideshow-container-reviews");
 const derelictStarSlideshow = document.querySelector(".slideshow-container-derelict-star");
 const gardenSlideshow = document.querySelector(".slideshow-container-garden");
 const aquariumSlideshow = document.querySelector(".slideshow-container-aquarium");
-const babSlideshow = document.querySelector(".slideshow-container-bab");
+const babSlideshow = document.querySelector(".slideshow-container-BAB");
 
 
-const slideShows = [reviewsSlideshow, derelictStarSlideshow, gardenSlideshow];
+const slideShows = [reviewsSlideshow, derelictStarSlideshow, gardenSlideshow, aquariumSlideshow, babSlideshow];
 
 const reviewsButton = document.getElementById("reviewsButton");
 const derelictStarButton = document.getElementById("derelictStarButton");
@@ -99,6 +99,9 @@ function showSlides(n){
     var dSSlides = document.getElementsByClassName("myDSSlides");
     var revSlides = document.getElementsByClassName("myRevSlides");
     var gardenSlides = document.getElementsByClassName("myGardenSlides");
+    var aquariumSlides = document.getElementsByClassName("myAquariumSlides");
+    var babSlides = document.getElementsByClassName("myBABSlides");
+
     var dots = document.getElementsByClassName("dot");
 
     if (n > dSSlides.length) {slideIndex=1}
@@ -109,6 +112,12 @@ function showSlides(n){
 
     if (n > gardenSlides.length) {slideIndex=1}
     if (n < 1) {slideIndex = gardenSlides.length}
+
+    if (n > aquariumSlides.length) {slideIndex=1}
+    if (n < 1) {slideIndex = aquariumSlides.length}
+
+    if (n > babSlides.length) {slideIndex=1}
+    if (n < 1) {slideIndex = babSlides.length}
 
 
     for (s=0; s<dSSlides.length; s++) {
@@ -121,6 +130,13 @@ function showSlides(n){
         gardenSlides[s].style.display = "none";
     }
 
+    for (s=0; s<aquariumSlides.length; s++) {
+        aquariumSlides[s].style.display = "none";
+    }
+    for (s=0; s<babSlides.length; s++) {
+        babSlides[s].style.display = "none";
+    }
+
     for (s=0; s<dots.length; s++) {
         dots[s].className = dots[s].className.replace(" active", "");
     }
@@ -128,6 +144,9 @@ function showSlides(n){
     dSSlides[slideIndex-1].style.display = "block";
     revSlides[slideIndex-1].style.display = "block";
     gardenSlides[slideIndex-1].style.display = "block";
+
+    aquariumSlides[slideIndex-1].style.display = "block";
+    babSlides[slideIndex-1].style.display = "block";
 
     dots[slideIndex-1].className += " active";
 }
@@ -191,6 +210,7 @@ aquariumButton.onclick = function() {
     }
     modalAquarium.style.display = "block";
 }
+const images = document.getElementsByClassName("glorious").
 babButton.onclick = function() {
     let m;
     for(m of modals){
