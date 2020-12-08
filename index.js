@@ -169,12 +169,8 @@ const modals = [modalDS, modalReviews, modalPetsAmok, modalVirtualPet, modalAqua
 const petsAmokButton = document.getElementById("petsAmokButton");
 const virtualPetButton = document.getElementById("virtualPetButton");
 
-const span = document.getElementsByClassName("close")[0]; // ???
-// derelictStarButton.addEventListener('click', derelictStarModal);
+const span = document.getElementsByClassName("close");
 
-// function derelictStarModal (){
-//     console.log("firing");
-// }
 derelictStarButton.onclick = function() {
     let m;
     for(m of modals){
@@ -217,20 +213,15 @@ babButton.onclick = function() {
     }
     modalBAB.style.display = "block";
 }
-const images = document.getElementsByClassName("glorious").
-babButton.onclick = function() {
-    let m;
-    for(m of modals){
-        m.style.display="none";
-    }
-    modalBAB.style.display = "block";
-}
+const images = document.getElementsByClassName("glorious");
+
 
 //span should be a collection
 let sp;
-for (sp of modals){
+for (sp of span){
     sp.onclick = function() { //CLOSE ANY OPEN MODAL WHEN CLICKING THE X
         let m;
+        console.log("firing");
         for(m of modals){
             m.style.display="none";
         }
