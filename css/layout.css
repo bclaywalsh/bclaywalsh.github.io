@@ -383,6 +383,10 @@ main {
   max-width: 70vw;
   max-height: 50vh;
   z-index: 111;
+
+  display: flex;
+  justify-content: center;
+
   /* margin-top: -5vh;
   margin-left: -8vh; */
 }
@@ -400,6 +404,10 @@ main {
   max-width: 70vw;
   max-height: 50vh;
   z-index: 111;
+}
+
+#mobile:hover {
+  left: 25vw;
 }
 
 /* .glorious:hover > .slideshow-container-aquarium,
